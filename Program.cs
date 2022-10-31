@@ -15,5 +15,13 @@ string[] GetMatrix(int rowsCount)
     return matrix;
 }
 
+void PrintMatrix(string?[] matrix)
+{
+    Console.WriteLine();
+    Console.WriteLine("[{0}]", string.Join(", ", matrix));
+}
+
+
 int m = Convert.ToInt32(ReadNumber("Введите количество строк"));
 string[] matr = GetMatrix(m);
+PrintMatrix(matr);
